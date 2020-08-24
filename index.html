@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наталья Клеймёнова — официальный сайт</title>
+    <style type="text/css">
+        * {
+            font-family: Arial;
+        }
+
+        header {
+            background-color: #fbfbfb;
+        }
+
+        .fixed-container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .first-section {
+            display: flex;
+            flex-direction: column;
+            padding: 0 100px;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #1f1f24;
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        nav a:hover {
+            color: #fc557c;
+            text-decoration: underline;
+        }
+
+        .phone-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .phone {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        .order-call {
+            border: 1px solid #fc557c;
+            padding: 16px 40px;
+            color: #fc557c;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 650px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 0 0 15px;
+        }
+
+        h3 {
+            color: #8993ad;
+            font-size: 24px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="fixed-container first-section">
+        <div class="menu-container">
+            <nav>
+                <a href="#">Услуги</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Цены</a>
+            </nav>
+            <div class="phone-container">
+                <span class="phone">+7 495 555-55-55</span>
+                <button class="order-call">Заказать звонок</button>
+            </div>
+        </div>
+        <div class="title-container">
+            <h1>Дмитрий Алексеев</h1>
+            <h3>Frontend-разработчик и веб-верстальщик</h3>
+            <button>Узнать больше</button>
+        </div>
+    </div>
+</header>
+</body>
+</html>
