@@ -5,6 +5,7 @@
     <meta charset="utf-8"/>
 
     <link rel="shortcut icon" type="image/x-icon" href="/sk_html/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style type="text/css">
         * {
@@ -96,24 +97,48 @@
             font-family: 'Tahoma';
         }
 
-        header {
-            background: url('./photo.png') no-repeat right bottom #fbfbfb;
-            padding-top: 15px;
-        }
-
         body {
             padding: 0px;
             margin: 0px;
             min-width: 1400px;
         }
 
+        header {
+            background: url('./photo.png') no-repeat right bottom #fbfbfb;
+            padding-top: 15px;
+        }
+
+        nav a {
+            font-family: 'Roboto';
+            font-size: 13px;
+        }
+
         .btn {
-            border: none;
+            border: 1px solid #ff4e2e;
             color: #fff;
             background: #ff4e2e;
             padding: 16px 40px;
             cursor: pointer;
+            transition: all 0.5s ease;
         }
+
+        .btn:hover {
+            color: #ff4e2e;
+            background: none;
+            padding: 16px 40px;
+            cursor: pointer;
+        }
+
+        .order-call {
+            transition: all 0.5s ease;
+        }
+
+        .order-call:hover {
+            border: 1px solid #fc557c;
+            color: #fff;
+            background-color: #fc557c;
+        }
+
 
         .second-section {
             display: flex;
