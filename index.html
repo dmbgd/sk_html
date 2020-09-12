@@ -3,203 +3,64 @@
 <head>
     <title>Дмитрий Алексеев — официальный сайт</title>
     <meta charset="utf-8"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/sk_html/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
 
-    <style type="text/css">
-        * {
-             font-family: Arial;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>-->
 
-        header {
-            background-color: #fbfbfb;
-        }
+    <link rel="stylesheet" href="./animate.min.css"/>
+    <script src="./wow.min.js"></script>
 
-        .fixed-container {
-            width: 1000px;
-            margin: 0 auto;
-        }
+    <link rel="stylesheet" href="./main.css"/>
+    <script src="./js/common.js"></script>
 
-        .first-section {
-            display: flex;
-            flex-direction: column;
-            padding: 0 100px;
-        }
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+<!--    <script src="https://www.google.com/recaptcha/api.js?render=6Ld9T8MZAAAAAHNY_x9Tm6_QlFGUMn_gBtXEffg-"></script>-->
 
-        .menu-container {
-            display: flex;
-            justify-content: space-between;
-            height: 60px;
-            align-items: center;
-        }
-
-        nav {
-            display: flex;
-        }
-
-        nav a {
-            color: #1f1f24;
-            text-decoration: none;
-            margin-right: 40px;
-        }
-
-        nav a:hover {
-            color: #fc557c;
-            text-decoration: underline;
-        }
-
-        .phone-container {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .phone {
-            font-size: 20px;
-            font-weight: bold;
-            margin-right: 30px;
-        }
-
-        .order-call {
-            border: 1px solid #fc557c;
-            padding: 13px 40px;
-            color: #fc557c;
-            background-color: white;
-            cursor: pointer;
-        }
-
-        .title-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            height: 768px;
-        }
-
-        h1 {
-            font-size: 70px;
-            margin: 0 0 15px;
-        }
-
-        h3 {
-            color: #8993ad;
-            font-size: 25px;
-            font-weight: normal;
-        }
-
-
-
-
-
-
-        * {
-            font-family: 'Tahoma';
-        }
-
-        body {
-            padding: 0px;
-            margin: 0px;
-            min-width: 1400px;
-        }
-
-        header {
-            background: url('./photo.png') no-repeat right bottom #fbfbfb;
-            padding-top: 15px;
-        }
-
-        nav a {
-            font-family: 'Roboto';
-            font-size: 13px;
-        }
-
-        .btn {
-            border: 1px solid #ff4e2e;
-            color: #fff;
-            background: #ff4e2e;
-            padding: 16px 40px;
-            cursor: pointer;
-            transition: all 0.5s ease;
-        }
-
-        .btn:hover {
-            color: #ff4e2e;
-            background: none;
-            padding: 16px 40px;
-            cursor: pointer;
-        }
-
-        .order-call {
-            transition: all 0.5s ease;
-        }
-
-        .order-call:hover {
-            border: 1px solid #fc557c;
-            color: #fff;
-            background-color: #fc557c;
-        }
-
-
-        .second-section {
-            display: flex;
-            align-content: center;
-            align-items: center;
-            height: 650px;
-            margin: 0 auto;
-            /*background: red;*/
-        }
-
-        .second-section h2 {
-            font-size: 50px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .v-center {
-            /*background: blue;*/
-            text-align: center;
-        }
-
-        .block-i-do {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 150px;
-            margin: 100px 0;
-        }
-
-
-        .block-i-do li {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-            color: #8993ad;
-            width: 250px;
-            text-align: center;
-            padding-top: 85px;
-            list-style: none;
-        }
-
-
-        .block-i-do .tools {
-            background: url('./icons/coding.png') top center no-repeat;
-        }
-        .block-i-do .responsive {
-            background: url('./icons/responsive.png') top center no-repeat;
-        }
-        .block-i-do .front {
-            background: url('./icons/programming.png') top center no-repeat;
-        }
-        .block-i-do .coding {
-            background: url('./icons/tools-and-utensils.png') top center no-repeat;
-        }
-
-
-    </style>
 </head>
+
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6Ld9T8MZAAAAAHNY_x9Tm6_QlFGUMn_gBtXEffg-', { action: 'contact' }).then(function (token) {
+            var recaptchaResponse = document.getElementById('recaptchaResponse');
+            recaptchaResponse.value = token;
+        });
+    });
+</script>
+
 <body>
+
+<div class="form-layout">
+    <form class="order-form">
+        <a href="#" class="close-button"></a>
+        <h4>Оставьте заявку</h4>
+        <div class="error-send"></div>
+        <label>
+            Имя:
+            <input type="text" name="name" maxlength="45">
+        </label>
+        <label>
+            Телефон:
+            <input type="text" name="phone" class="phone-mask" placeholder="+7 (___) ___ __ __">
+        </label>
+        <label>
+            E-mail:
+            <input type="email" name="email" maxlength="45">
+        </label>
+<!--        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">-->
+        <div class="g-recaptcha" data-sitekey="6LfkUcMZAAAAALZ9HE_f3ZVlaKAkRYeJISvCqbTg"></div>
+        <div class="button-container">
+            <button class="orange-button">Отправить</button>
+        </div>
+    </form>
+</div>
+
 <header>
+    <div class="photo wow slideInRight"></div>
     <div class="fixed-container first-section">
         <div class="menu-container">
             <nav>
@@ -209,13 +70,13 @@
             </nav>
             <div class="phone-container">
                 <span class="phone">+7 (499) 995-55-77</span>
-                <button class="order-call">Заказать звонок</button>
+                <button class="order-call show-order-form">Заказать звонок</button>
             </div>
         </div>
-        <div class="title-container">
-            <h1>Дмитрий Алексеев</h1>
+        <div class="title-container wow slideInLeft">
+            <h1>Дмитрий Алекс<span>е</span>ев</h1>
             <h3>Frontend-разработчик и веб-верстальщик</h3>
-            <button class="btn">Узнать больше</button>
+            <button class="btn show-order-form">Узнать больше</button>
         </div>
     </div>
 </header>
@@ -224,14 +85,70 @@
     <div class="v-center">
         <h2>Что я делаю</h2>
         <ul class="block-i-do">
-            <li class="coding">Вёрстка лендинг–страниц и сайтов любой сложности</li>
-            <li class="responsive">Адаптивная вёрстка под все браузеры и устройства</li>
-            <li class="front">Frontend–разработка и программирование</li>
-            <li class="tools">Исправление и доработка существующей вёрстки</li>
+            <li class="coding wow flip">Вёрстка лендинг–страниц и сайтов любой сложности</li>
+            <li class="responsive wow flip">Адаптивная вёрстка под все браузеры и устройства</li>
+            <li class="front wow flip">Frontend–разработка и программирование</li>
+            <li class="tools wow flip">Исправление и доработка существующей вёрстки</li>
         </ul>
-        <button class="btn">Узнать стоимость</button>
+        <button class="btn show-order-form">Узнать стоимость</button>
     </div>
 </section>
+
+<section class="three-section">
+    <div class="fixed-container">
+        <div class="v-center">
+            <h2>Примеры моих работ</h2>
+            <ul class="block-my-sample">
+                <li class="wow pulse">
+                    <img src="./img/portfolio-1.png"/>
+                    <div>Сайт психолога Веры Антоновой</div>
+                </li>
+                <li class="wow tada">
+                    <img src="./img/portfolio-2.png"/>
+                    <div>Сайт магазина детской одежды</div>
+                </li>
+                <li class="wow pulse">
+                    <img src="./img/portfolio-3.png"/>
+                    <div>Сайт магазина детской одежды</div>
+                </li>
+            </ul>
+            <button class="btn show-order-form">Заказать проект</button>
+        </div>
+    </div>
+</section>
+
+<section class="four-section">
+    <div class="fixed-container">
+            <h3>Адаптивная вёрстка под все устройства<br /> и браузеры от 1000 рублей всего за 4 часа.*</h3>
+            <p>* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,<br />&nbsp;&nbsp; в зависимости от сложности задач.</p>
+        </div>
+    </div>
+</section>
+
+<section class="five-section">
+    <div class="fixed-container">
+        <div class="col-contact">
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Цены</a>
+        </div>
+        <div class="col-contact">
+            <div class="phone-contact">+7 (499) 995-77-55</div>
+            <div class="mail-contact"><a href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a></div>
+        </div>
+        <div class="col-contact">
+            <button class="order-call show-order-form">Заказать звонок</button>
+            <div class="social-icons">
+                <a href="#" class="icon-vk"></a>
+                <a href="#" class="icon-fb"></a>
+                <a href="#" class="icon-tw"></a>
+                <a href="#" class="icon-in"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>© Дмитрий Алексеев, 2016 – 2018</footer>
 
 </body>
 </html>

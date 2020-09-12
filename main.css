@@ -1,0 +1,464 @@
+* {
+    font-family: Arial;
+}
+
+header {
+    background-color: #fbfbfb;
+}
+
+.fixed-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #1f1f24;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+nav a:hover {
+    color: #fc557c;
+    text-decoration: underline;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.phone {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.order-call {
+    border: 1px solid #fc557c;
+    padding: 13px 40px;
+    color: #fc557c;
+    background-color: white;
+    cursor: pointer;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 768px;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0 0 15px;
+}
+
+h3 {
+    color: #8993ad;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+
+
+
+/* Мои доработки примера макета */
+
+* {
+    font-family: 'Tahoma';
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    min-width: 1400px;
+}
+
+header {
+    padding-top: 15px;
+    background: #fbfbfb;
+}
+
+h1 span {
+    color: #fff;
+    background: #000;
+}
+
+.photo {
+    width: 100%;
+    height: 768px;
+    top: 70px;
+    left: 0px;
+    background: url('img/photo.png') no-repeat right bottom;
+    position: absolute;
+    min-width: 1400px;
+    z-index: 1;
+}
+
+nav a {
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+.btn {
+    border: 1px solid #ff4e2e;
+    color: #fff;
+    background: #ff4e2e;
+    padding: 16px 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    color: #ff4e2e;
+    background: none;
+    padding: 16px 40px;
+    cursor: pointer;
+}
+
+.order-call {
+    transition: all 0.5s ease;
+}
+
+.order-call:hover {
+    border: 1px solid #fc557c;
+    color: #fff;
+    background-color: #fc557c;
+}
+
+
+/* Вторая секция с разделом "что я делаю" */
+
+.second-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 550px;
+    margin: 0 auto;
+    /*background: red;*/
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.v-center {
+    /*background: blue;*/
+    text-align: center;
+}
+
+.block-i-do {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin: 75px 0;
+    padding: 0px;
+}
+
+
+.block-i-do li {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #8993ad;
+    width: 250px;
+    text-align: center;
+    padding: 95px 0px 10px 0px;
+    list-style: none;
+}
+
+.block-i-do li:hover {
+    color: #000;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+
+.block-i-do .tools {
+    background: url('./icons/coding.png') center 10px no-repeat;
+}
+.block-i-do .responsive {
+    background: url('./icons/responsive.png') center 10px no-repeat;
+}
+.block-i-do .front {
+    background: url('./icons/programming.png') center 10px no-repeat;
+}
+.block-i-do .coding {
+    background: url('./icons/tools-and-utensils.png') center 10px no-repeat;
+}
+
+
+
+/* Третья секция */
+
+.three-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0 auto;
+    background: #fbfbfb;
+}
+
+.block-my-sample {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin: 50px 0;
+    padding: 0px;
+}
+
+.block-my-sample li {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #8993ad;
+    width: 300px;
+    text-align: center;
+    list-style: none;
+    margin: 15px;
+}
+
+.block-my-sample li:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.block-my-sample li:hover > img {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+.block-my-sample li img {
+    width: 300px;
+    transition: all 0.5s ease;
+}
+
+.block-my-sample li div {
+    padding-top: 10px;
+}
+
+
+
+
+/* Четвертая секция (оранжевая) */
+
+.four-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 280px;
+    margin: 0 auto;
+    background: #ff4e2e;
+}
+
+.four-section .fixed-container {
+    padding-left: 100px;
+    width: 900px;
+}
+
+
+.four-section h3 {
+    font-size: 34px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+p {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+/* Пятая секция (контакты) */
+
+.five-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.five-section .fixed-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-contact a {
+    font-size: 14px;
+    color: #31293c;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.col-contact a:hover {
+    color: #fc557c;
+    text-decoration: underline;
+}
+
+
+.phone-contact, .mail-contact a {
+    font-size: 22px;
+    color: #000;
+    padding: 0px 0px 15px 40px;
+}
+
+.phone-contact {
+    background: url("./icons/call-answer.png") no-repeat left 5px;
+}
+
+.mail-contact {
+    background: url("./icons/envelope.png") no-repeat left 8px;
+}
+
+
+.social-icons {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    opacity: 0.4;
+    transition: all 0.5s ease;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+}
+
+
+.icon-vk {
+    background: url("./icons/vk.png");
+    width: 35px;
+    height: 21px;
+}
+
+.icon-tw {
+    background: url("./icons/twitter.png");
+    width: 29px;
+    height: 25px;
+}
+
+.icon-fb {
+    background: url("./icons/facebook.png");
+    width: 16px;
+    height: 28px;
+}
+
+.icon-in {
+    background: url("./icons/instagram.png");
+    width: 25px;
+    height: 25px;
+}
+
+/* Футер */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #31293c;
+    height: 80px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* Форма заказа */
+
+.form-layout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009e;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20000;
+}
+
+.order-form {
+    width: 300px;
+    background-color: white;
+    padding: 40px;
+    position: relative;
+}
+
+.order-form label {
+    display: block;
+}
+
+.order-form label input {
+    display: block;
+    width: 100%;
+    margin: 10px 0 15px;
+    font-size: 22px;
+}
+
+.orange-button {
+    border: 0;
+    padding: 10px 30px;
+    background-color: #ff6f2a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-container {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/close.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.error-send {
+    color: red;
+    text-align: center;
+    display: none;
+}
